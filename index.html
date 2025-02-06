@@ -41,14 +41,20 @@
                 your <b>alterna.dev</b> Google account.</p>
             <div class="flex column">
                 <a href="https://webmail.dreamhost.com" class="button" rel="noopener noreferrer">Email</a>
-                <a href="https://mailboxes.dreamhost.com" class="button" rel="noopener noreferrer">Email Settings (Automated Reply & Password)</a>
-                <a href="https://alterna-crew.plaky.com" class="button" rel="noopener noreferrer">Plaky (Tasks & Project Management)</a>
+                <a href="https://mailboxes.dreamhost.com" class="button" rel="noopener noreferrer">Email Settings
+                    (Automated Reply & Password)</a>
+                <a href="https://alterna.atlassian.net/jira" class="button" rel="noopener noreferrer">Jira (Task and
+                    Project Management)</a>
+                <a href="https://alterna.atlassian.net/wiki" class="button" rel="noopener noreferrer">Confluence</a>
+                <a href="https://loom.com/home" class="button" rel="noopener noreferrer">Loom (Asynchronous
+                    Communication)</a>
                 <a href="https://app.clockify.me" class="button" rel="noopener noreferrer">Clockify (Time Tracking)</a>
                 <a href="https://canva.com" class="button" rel="noopener noreferrer">Canva</a>
                 <a href="https://drive.google.com" class="button" rel="noopener noreferrer">Google Drive</a>
                 <a href="https://meet.google.com" class="button" rel="noopener noreferrer">Google Meet</a>
                 <a href="https://mail.google.com/chat" class="button" rel="noopener noreferrer">Google Chat</a>
                 <a href="https://calendar.google.com" class="button" rel="noopener noreferrer">Google Calendar</a>
+                <a href="https://alterna-crew.plaky.com" class="button" rel="noopener noreferrer">Plaky (Deprecated)</a>
             </div>
             <p>Powered by <a href="https://pages.github.com" rel="noopener noreferrer">GitHub Pages</a> on our <a
                     href="https://github.com/Institute-Alterna/work" rel="noopener noreferrer">work
@@ -56,8 +62,33 @@
         </div>
     </main>
     <footer>
-        <p>INSTITUTE ALTERNA - OPERATIONS DIVISION </p>
+        <p id="footerString">INSTITUTE ALTERNA - OPERATIONS DIVISION</p>
+        <noscript>
+            <p>dude, if you have javascript disabled, will you get anything in here to work?</p>
+        </noscript>
     </footer>
 </body>
+<script>
+    const messages = [
+        "the work is mysterious and important",
+        "remember to do it with purpose",
+        "the work is important, but so are you",
+        "take a break! you deserve it",
+        "you are doing great",
+        "oli is watching",
+        "be kind to yourself",
+        "being proactive and standing up for yourself differentiates you from the ones who are sitting down",
+        "remember to breathe",
+        "aim for progress, not perfection",
+        "you can do it all, one step at a time",
+        "we are in this together",
+        "we are a chill team, but this is serious work",
+        "you are a rockstar"
+    ]
+
+    const option = Math.floor(Math.random() * messages.length);
+
+    document.getElementById('footerString').textContent = `${messages[option]}`;
+</script>
 
 </html>
